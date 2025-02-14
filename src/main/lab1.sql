@@ -1,0 +1,22 @@
+-- We can order by columns in ascending or descending order. By default,
+--  `ORDER BY` is in ascending order. Ascending order places lesser values before
+--  greater values. Descending order is the opposite, greatest values first.
+-- For example, this ORDER BY clause will sort employees from highest to lowest
+--  values for the salary column:
+--      SELECT * FROM employee_table ORDER BY salary DESC
+-- In the event of a tie, additional columns may be specified in an ORDER BY, where
+--  the order of the second column is used. For example:
+--      SELECT FROM employee_table ORDER BY salary, last_name DESC
+-- ORDER BY will also sort varchar values alphabetically, and timestamps
+--  chronologically.
+--      Character table
+--      | id |  first_name  |  last_name  |
+--      |----|--------------|-------------|
+--      |1   |'Leto'        |'Atreides'   |
+--      |2   |'Vladimir'    |'Harkonnen'  |
+--      |3   |'Jessica'     |'Atreides'   |
+--      |4   |'Paul'        |'Atreides'   |
+--      |5   |'Feyd-Rautha' |'Harkonnen'  |
+-- TODO: Create a select statement that will order all records from the Character
+--  table using the last_name in ascending order, with first_name as a tiebreaker.
+--  The sort should be alphabetical, starting with 'A'.

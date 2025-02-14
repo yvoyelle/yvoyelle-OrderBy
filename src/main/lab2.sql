@@ -1,0 +1,14 @@
+-- When using an ORDER BY statement, you can also limit the amount of entries
+--  retrieved using the LIMIT statement. For instance, the statement
+--      SELECT * FROM Employee ORDER BY salary DESC LIMIT 5
+--  will retrieve only the Employees with the five highest salary.
+--      Character table
+--      | id |  first_name  |  last_name  |
+--      |----|--------------|-------------|
+--      |1   |'Leto'        |'Atreides'   |
+--      |2   |'Vladimir'    |'Harkonnen'  |
+--      |3   |'Jessica'     |'Atreides'   |
+--      |4   |'Paul'        |'Atreides'   |
+--      |5   |'Feyd-Rautha' |'Harkonnen'  |
+-- TODO: Create a select statement that will retrieve the first 3 first_names, sorted
+--      alphabetically, starting with A.
